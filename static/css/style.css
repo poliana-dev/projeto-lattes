@@ -6,3 +6,27 @@
 .nav-link{
     color: white;
 }
+
+.h2{
+    text-align: center;
+    margin-top: 2em;
+    color:#0063A9;
+}
+h5{
+    color: #0063A9;
+}
+h6{
+    color: #252390;
+}
+
+footer{
+    margin-top: 3em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background-color: #538CC6;
+}
+
+.conteudo-footer, .p{
+    text-align: center;
+    color: white;
+}
