@@ -1,7 +1,12 @@
+:root {
+    --clr-grey: #B7B6B6;
+    --clr-blue-100: #0063A9;
+    --clr-blue-500: #252390;
+}
+
 .navbar{
     background-color: #538CC6;
 }
-
 
 .nav-link{
     color: white;
@@ -13,10 +18,10 @@
     color:#0063A9;
 }
 h5{
-    color: #0063A9;
+    color: var(--clr-blue-100);
 }
 h6{
-    color: #252390;
+    color: var(--clr-blue-500);
 }
 
 footer{
@@ -29,4 +34,17 @@ footer{
 .conteudo-footer, .p{
     text-align: center;
     color: white;
+}
+
+.form-container {
+    border: .5px solid var(--clr-grey);
+    padding: 2em;
+}
+
+.form-container h1 {
+    color: var(--clr-blue-100);
+};
+
+.form-container p {
+    width: 100px;
 }
