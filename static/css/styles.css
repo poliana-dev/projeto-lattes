@@ -12,10 +12,15 @@
     color: white;
 }
 
+.nav-link:hover{
+    text-decoration: none;
+    color: #252390;
+}
+
 .h2{
     text-align: center;
-    margin-top: 2em;
-    color:#0063A9;
+    margin-top: 3em;
+    color: var(--clr-blue-100);
 }
 h5{
     color: var(--clr-blue-100);
@@ -25,7 +30,7 @@ h6{
 }
 
 footer{
-    margin-top: 3em;
+    margin-top: 4em;
     padding-top: 2em;
     padding-bottom: 1em;
     background-color: #538CC6;
@@ -48,3 +53,22 @@ footer{
 .form-container p {
     width: 100px;
 }
+.accordion, .menu{
+    margin-top: 2em;
+}
+
+.accordion-body{
+    text-align: justify;
+}
+
+a:hover{
+    color: #252390;
+    text-decoration:underline;
+    
+
+}
+a{
+    text-decoration: none;
+}
+
+
