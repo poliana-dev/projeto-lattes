@@ -57,7 +57,7 @@
         <div class="row">
             <div class="icons-container">
                 <div class="icon">
-                    <a href="cadastro-1-curriculo.html" class="icon-container active">
+                    <a href="cadastro-1-curriculo.html" class="icon-container">
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="30" height="30" fill="url(#pattern0_121_29)" />
@@ -75,7 +75,7 @@
                 </div>
 
                 <div class="icon">
-                    <a href="cadastro-2-curriculo.html" class="icon-container">
+                    <a href="cadastro-2-curriculo.html" class="icon-container active">
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="30" height="30" fill="url(#pattern0_121_28)" />
@@ -168,46 +168,176 @@
         </div>
 
         <div class="form-container container">
-            <h1>CADASTRE-SE NO LATTES</h1>
-            <p>
-                Leia as condições do Termo de adesão e compromisso da base de dados
-                Lattes. Termo de adesão e compromisso do sistema de currículo da
-                Plataforma Lattes. Inclua a informação abaixo e siga os passos para
-                completar o seu cadastro
-            </p>
             <form>
-                <div class="row mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>PERFIL</h3>
+                    </div>
                     <div class="col-md-4">
-                        <label for="inputState" class="form-label">State</label>
+                        <div class="image-input">
+                            <div class="user-image"></div>
+                            <button class="btn btn-primary">ADICIONAR FOTO</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="inputName" class="form-label">Primeiro nome</label>
+                        <input type="text" class="form-control" id="inputName" />
+
+                        <label for="inputCountry" class="form-label">País de nascimento</label>
+                        <input type="text" class="form-control" id="inputCountry" />
+
+
+                        <label for="inputGender" class="form-label">Sexo</label>
+                        <input type="text" class="form-control" id="inputGender" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="inputLastName" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="inputLastName" />
+
+                        <label for="inputBirthday" class="form-label">Data de nascimento</label>
+                        <input type="date" class="form-control" id="inputBirthday" />
+
+                        <label for="inputGender" class="form-label">Sexo</label>
+                        <input type="text" class="form-control" id="inputGender" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h3>DADOS PESSOAIS</h3>
+                </div>
+
+                <div class="row mt-5">
+                    <h5 class="col-md-12">RG</h5>
+                    <div class="col-md-4">
+                        <label for="inputIdentity" class="form-label">Número de identidade</label>
+                        <input type="text" class="form-control" id="inputIdentity" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputCreationDate" class="form-label">Data de emissão</label>
+                        <input type="text" class="form-control" id="inputCreationDate" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">UF</label>
                         <select id="inputState" class="form-select">
-                            <option selected>Selecione o país</option>
-                            <option>Brasil</option>
-                            <option>Estados Unidos da América</option>
-                            <option>Japão</option>
+                            <option selected value="">UF</option>
+                            <option selected value="RN">RN</option>
+                            <option selected value="SP">SP</option>
                         </select>
                     </div>
                 </div>
 
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <label for="inputEmail" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="inputEmail4" />
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <h5>CPF</h5>
                     </div>
-                    <div class="col-md-6">
-                        <label for="inputEmailConfirm" class="form-label">Confirmar email:</label>
-                        <input type="email" class="form-control" id="inputEmailConfirm" />
+
+                    <div class="col-md-3">
+                        <div class="d-flex flex-column">
+                            <label class="form-label">Possui CPF?</label>
+                            <div class="d-flex">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="sim">
+                                    <label class="form-check-label" for="inlineRadio1">Sim</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="nao">
+                                    <label class="form-check-label" for="inlineRadio2">Não</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <label for="inputPassword" class="form-label">Senha:</label>
-                        <input type="password" class="form-control" id="inputPassword" />
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputPasswordConfirm" class="form-label">Confirmar senha:</label>
-                        <input type="password" class="form-control" id="inputPasswordConfirm" />
+
+                    <div class="col-md-3">
+                        <label for="inputCpf" class="form-label">Número do CPF</label>
+                        <input type="text" class="form-control" id="inputCpf" />
                     </div>
                 </div>
 
-                <div class="mt-3">
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <h5>NOME SOCIAL</h5>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="d-flex flex-column">
+                            <label class="form-label">Possui nome social?</label>
+                            <div class="d-flex">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="socialName" id="inlineRadio1"
+                                        value="sim">
+                                    <label class="form-check-label" for="inlineRadio1">Sim</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="socialName" id="inlineRadio2"
+                                        value="nao">
+                                    <label class="form-check-label" for="inlineRadio2">Não</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="inputSocialName" class="form-label">Nome social</label>
+                        <input type="text" class="form-control" id="inputSocialName" />
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <h5>PASSAPORTE</h5>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="inputPassport" class="form-label">Número do passaporte</label>
+                        <input type="text" class="form-control" id="inputPassport" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputPassport" class="form-label">Data de emissão</label>
+                        <input type="text" class="form-control" id="inputPassport" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputPassport" class="form-label">Data de validade</label>
+                        <input type="text" class="form-control" id="inputPassport" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputPassport" class="form-label">País emissor</label>
+                        <input type="text" class="form-control" id="inputPassport" />
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <h5>PARENTES</h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="inputPassport" class="form-label">Primeiro nome do pai</label>
+                            <input type="text" class="form-control" id="inputPassport" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputPassport" class="form-label">Sobrenome do pai (nome de família)</label>
+                            <input type="text" class="form-control" id="inputPassport" />
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label for="inputPassport" class="form-label">Primeiro nome da mãe</label>
+                            <input type="text" class="form-control" id="inputPassport" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputPassport" class="form-label">Sobrenome da mãe (nome de família)</label>
+                            <input type="text" class="form-control" id="inputPassport" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5">
                     <button class="btn btn-danger">
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="#00000" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
