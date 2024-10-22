@@ -1,0 +1,27 @@
+:root{
+    --marrom: #672121;
+    --clr-grey: #B7B6B6;
+}
+
+.navbar{
+    background-color: var(--marrom);
+}
+
+#titulo-cadi{
+    color: white;
+    padding-right: 15em;
+
+}
+
+.sessao{
+    background-color: #F0E7C8;
+    text-align: center;
+}
+
+.form-container {
+    border: .5px solid var(--clr-grey);
+    padding: 3em 4em;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}
+
