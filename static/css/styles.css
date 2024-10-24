@@ -142,6 +142,34 @@ a{
     border-radius: 8px;
 }
 
+/* Tela dos resultados de curriculos */
+
+.curriculo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.curriculo .curriculo-perfil .perfil {
+    background: var(--clr-grey);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.curriculo .curriculo-informacoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.curriculo .curriculo-informacoes .curriculo-titulo {
+    font-weight: 700;
+}
+.curriculo .curriculo-informacoes .curriculo-dados {
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 90%;
+}
 
 
 
