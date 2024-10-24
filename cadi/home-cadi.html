@@ -30,21 +30,13 @@
         </section>
 
         <section>
-            <nav class="navbar  navbar-expand-lg sessao ">
+            <nav class="navbar-expand-lg sessao">
                 <div class="container-fluid">
-
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../home-lattes.html">Plataforma lattes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Diretorio de instituições</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="home-cadi.html">Cadastro de instituições</a>
-                        </li>
-                    </ul>
-                    
+                    <div class="nav-links">
+                        <a class="nav-link" aria-current="page" href="../home-lattes.html">Plataforma Lattes</a>
+                        <a class="nav-link" aria-current="page" href="#">Diretório de Instituições</a>
+                        <a class="nav-link" aria-current="page" href="home-cadi.html">Cadastro de Instituições</a>
+                    </div>
                 </div>
             </nav>
         </section>
@@ -53,14 +45,15 @@
             <h1>CADASTRO DE INFORMAÇÕES INSTITUCIONAIS</h1>
 
             <div class="row">
-                <p>Buscar pelo:</p>
-                <div class="form-check">
+                <p class="check-title">Buscar pelo:</p>
+
+                <div class="form-check check-filter">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
                         Nome e/ou sigla
                     </label>
                 </div>
-                <div class="form-check">
+                <div class="form-check check-filter">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                     <label class="form-check-label" for="flexRadioDefault2">
                         CNPJ
@@ -68,13 +61,13 @@
                 </div>
 
                     <div class="col-md-8">
-                        <form class="d-flex">
+                        <form class="d-flex form-busca">
                             <input class="form-control me-2 " type="search" placeholder="Digite sua busca" aria-label="Buscar">
-                            <button class="btn " type="submit">
-                                <!-- <img src="../static/img/-search.png" alt=""> -->
-                                Buscar
-                            </button>
+                            <a class="btn btn-check"  href="cadastro-1-inst.html" type="submit">
+                                <img class="lupa" src="../static/img/-search.png" alt="">Buscar
+                            </a>
                         </form>
+                        <p class="text-muted">É necessario verificar se a sua instituição já está cadastrada.</p>
                     </div>
 
                 <hr>
