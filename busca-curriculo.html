@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,16 @@
     <title>Buscar currículo</title>
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="static/css/styles.css">
 
 
 </head>
+
 <body>
     <section id="navegacao">
         <nav class="navbar navbar-expand-lg fixed-top">
@@ -20,9 +25,12 @@
 
 
                 <a class="navbar-brand" href="index.html">
-                    <img src="static/img/logo-lattes.svg" alt="Logo" width="125" height="54" class="d-inline-block align-text-top">
+                    <img src="static/img/logo-lattes.svg" alt="Logo" width="125" height="54"
+                        class="d-inline-block align-text-top">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -52,41 +60,145 @@
 
     <section class="form-container container buscar-curriculo">
         <div class="row">
-            <div>
-                <h1>BUSCAR CURRICULO LATTES (BUSCA SIMPLES)</h1>
+            <div class="col-md-9">
+                <h3>BUSCAR CURRICULO LATTES (BUSCA SIMPLES)</h3>
+            </div>
 
-                <p>Buscar por:</p>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1 " checked>
-                    <label class="form-check-label" for="inlineRadio1">Nome</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlineRadio2">Assunto (Título ou palavra chave</label>
-                  </div>
+            <div class="col-md-3 d-flex justify-content-end">
+                <div>
+                    <a href="#" class="btn btn-primary">
+                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.0937 21.3253L18.0937 16.3193C17.9318 16.1533 17.7515 16.0063 17.5562 15.8813L16.3062 15.0177C18.8774 11.8325 18.9013 7.28873 16.3637 4.07656C13.8262 0.864391 9.40449 -0.158948 5.71637 1.61239C2.02825 3.38373 0.0580431 7.47701 0.97216 11.4689C1.88628 15.4607 5.44076 18.2858 9.53125 18.2716C11.5163 18.2722 13.4426 17.597 14.9937 16.3568L15.9312 17.6083C16.0424 17.7695 16.168 17.9203 16.3062 18.0589L21.3062 23.0649C21.4236 23.1834 21.5833 23.25 21.75 23.25C21.9166 23.25 22.0764 23.1834 22.1937 23.0649L23.0687 22.1888C23.306 21.9539 23.317 21.5737 23.0937 21.3253ZM9.53125 15.7686C6.07947 15.7686 3.28125 12.967 3.28125 9.51108C3.28125 6.05514 6.07947 3.25355 9.53125 3.25355C12.983 3.25355 15.7812 6.05514 15.7812 9.51108C15.7812 11.1707 15.1228 12.7623 13.9507 13.9358C12.7786 15.1093 11.1888 15.7686 9.53125 15.7686Z"
+                                fill="#333333" />
+                        </svg>
+                        Busca avançada
+                    </a>
                 </div>
             </div>
-
-            <div class="col-md-8">
-                <form class="d-flex form-busca">
-                    
-                    <input type="email" class="form-control" id="buscar-curriculo" placeholder="Busque o currículo de....">
-                    <a class="btn btn-success"  href="#" type="submit">
-                        Buscar
-                    </a>
-                    
-                </form>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <p>Buscar por:</p>
             </div>
-            
+
+            <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="inlineRadio1">Nome</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Assunto (Título ou palavra chave)</label>
+                </div>
+            </div>
         </div>
 
-        
+        <div class="col-md-12 mt-3">
+            <form class="form-busca">
+                <div class="d-flex align-items-center justify-content-around gap-2 ">
+                    <div class="col-md-7">
+                        <input type="email" class="form-control" id="buscar-curriculo"
+                            placeholder="Busque o currículo de....">
+                    </div>
 
-
-    
+                    <!-- Botões -->
+                    <div class="col-md-5 d-flex justify-content-end gap-3">
+                        <!-- Buscar -->
+                        <a href="resultados-curriculo.html" class="btn btn-success">
+                            <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.0937 21.3253L18.0937 16.3193C17.9318 16.1533 17.7515 16.0063 17.5562 15.8813L16.3062 15.0177C18.8774 11.8325 18.9013 7.28873 16.3637 4.07656C13.8262 0.864391 9.40449 -0.158948 5.71637 1.61239C2.02825 3.38373 0.0580431 7.47701 0.97216 11.4689C1.88628 15.4607 5.44076 18.2858 9.53125 18.2716C11.5163 18.2722 13.4426 17.597 14.9937 16.3568L15.9312 17.6083C16.0424 17.7695 16.168 17.9203 16.3062 18.0589L21.3062 23.0649C21.4236 23.1834 21.5833 23.25 21.75 23.25C21.9166 23.25 22.0764 23.1834 22.1937 23.0649L23.0687 22.1888C23.306 21.9539 23.317 21.5737 23.0937 21.3253ZM9.53125 15.7686C6.07947 15.7686 3.28125 12.967 3.28125 9.51108C3.28125 6.05514 6.07947 3.25355 9.53125 3.25355C12.983 3.25355 15.7812 6.05514 15.7812 9.51108C15.7812 11.1707 15.1228 12.7623 13.9507 13.9358C12.7786 15.1093 11.1888 15.7686 9.53125 15.7686Z"
+                                    fill="#333333" />
+                            </svg>
+                            Buscar
+                        </a>
+                        <!-- Filtrar -->
+                        <button class="btn btn-warning">
+                            <svg width="25" height="25" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_170_57)" />
+                                <defs>
+                                    <pattern id="pattern0_170_57" patternContentUnits="objectBoundingBox" width="1"
+                                        height="1">
+                                        <use xlink:href="#image0_170_57" transform="scale(0.0111111)" />
+                                    </pattern>
+                                    <image id="image0_170_57" width="90" height="90"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACv0lEQVR4nO3cvWsUQRzG8W8SI1EUQQwEAgoKEUxhoUVsbLS5ysrKSiutBI1gZ/4Ao+ALSWVnYyobU0QD2thYaGFhYSEoCBI1JCqKOrIyjcLOuNy+/GZ8PnBldn/zZG5mdubuQERERERERETk/7MZuAl8BJxeFBl8AG4Am+oMel7hUtbBimxqMQh8VtCUBf3JZ6SgSSTogoYOSoOeo0bFgH/dTwCaDPmdwXvgWt2T4d/GgFeB0J8D20jPVuBZoF1vgPG2i5oEVgNF3QOGSMcgcDfQnjVgf1fF9YDvgeJmScfVQDt+AMe6LvBCZNw+jX2nIm2YxojQquQbcAS7DgNfA/XfwpBh4EGg2BVgAnv2AO8CdT8CNmLMduBFoOiXwA7SqncUo/b69WVZ8Q+N9JDiHXg/UOeqX1WZlsKYN5/wnFJpFj/XYW3TkdrOkJgrBtelvYzW/WaftCYjBxeLiT3JVto7eN3S3kGuezN/2AW8DTTyiT8qa8oI8Dhw/2IdvZtMHPQb5GWNvQMMNHDf4pq3A/f9AhwiM8eBn4FGX2rgnjOB+xW1nCBTMy02PPaPLWrJ1kBLb+XYULXQ0FBlykhkciomzp19XH/cr2a6mnxNGWtoubUFeGpgOWnKvsgDRNWjMGsPSKb0Io/Elytca9b6UVTXzgcC+tejsJOGN7FMmetj2zKFbVkzhoHlyFFYmZXA3y37a0uFo6UyqRydmTJRY9AWD4NNcTUFLREKuiVOPVpBZ8WpRyvorDj1aAWdFaceraCz4tSjFXRWnHq0gs6KU49W0Flx6tEKOitOPVpBZ8WpR9sKegMwpcPZ+oMeAg4AZ/1XMWK/hiMRoU+DhoJV0BVVCVNB98EpaPtBr/lvwF5sqdakuQqvdWDJf8PqqJGfqEiGU7DtB72uHtucRT/GTvmHEhERERERERERERGa8wvWLMKpAmTWXgAAAABJRU5ErkJggg==" />
+                                </defs>
+                            </svg>
+                            Filtrar
+                        </button>
+                        <!-- Preferências -->
+                        <button class="btn btn-secondary">
+                            <svg width="25" height="25" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_170_66)" />
+                                <defs>
+                                    <pattern id="pattern0_170_66" patternContentUnits="objectBoundingBox" width="1"
+                                        height="1">
+                                        <use xlink:href="#image0_170_66" transform="scale(0.0111111)" />
+                                    </pattern>
+                                    <image id="image0_170_66" width="90" height="90"
+                                        xlink:href="data:image/png;base64,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" />
+                                </defs>
+                            </svg>
+                            Preferências
+                        </button>
+                    </div>
+                </div>
+                <hr class="mt-5">
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <h5>Nas bases:</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Doutores
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Demais pesquisadores (Mestres, graduados, estudantes, técnicos, etc.)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Nacionalidade:</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Brasileira
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Estrangeira
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>País de nacionalidade</h5>
+                        <select id="inputState" class="form-select">
+                            <option selected>Escolha o país</option>
+                            <option>Brasil</option>
+                            <option>Japão</option>
+                            <option>México</option>
+                            <option>Chile</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
 
 
-   
+
 </body>
+
 </html>
