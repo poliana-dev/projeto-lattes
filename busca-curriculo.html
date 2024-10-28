@@ -7,15 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscar currículo</title>
 
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="static/css/styles.css">
-
-
 </head>
 
 <body>
@@ -77,30 +74,31 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-3">
-            <div class="col-md-12">
-                <p>Buscar por:</p>
-            </div>
-
-            <div class="col-md-12">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1" checked>
-                    <label class="form-check-label" for="inlineRadio1">Nome</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                        value="option2">
-                    <label class="form-check-label" for="inlineRadio2">Assunto (Título ou palavra chave)</label>
-                </div>
-            </div>
-        </div>
 
         <div class="col-md-12 mt-3">
             <form class="form-busca">
-                <div class="d-flex align-items-center justify-content-around gap-2 ">
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <h6>Buscar por:</h6>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="inlineRadio1">Nome</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Assunto (Título ou palavra chave)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
                     <div class="col-md-7">
-                        <input type="email" class="form-control" id="buscar-curriculo"
+                        <input type="text" class="form-control" id="buscar-curriculo"
                             placeholder="Busque o currículo de....">
                     </div>
 
@@ -117,37 +115,374 @@
                             Buscar
                         </a>
                         <!-- Filtrar -->
-                        <button class="btn btn-warning">
-                            <svg width="25" height="25" viewBox="0 0 30 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect width="30" height="30" fill="url(#pattern0_170_57)" />
-                                <defs>
-                                    <pattern id="pattern0_170_57" patternContentUnits="objectBoundingBox" width="1"
-                                        height="1">
-                                        <use xlink:href="#image0_170_57" transform="scale(0.0111111)" />
-                                    </pattern>
-                                    <image id="image0_170_57" width="90" height="90"
-                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACv0lEQVR4nO3cvWsUQRzG8W8SI1EUQQwEAgoKEUxhoUVsbLS5ysrKSiutBI1gZ/4Ao+ALSWVnYyobU0QD2thYaGFhYSEoCBI1JCqKOrIyjcLOuNy+/GZ8PnBldn/zZG5mdubuQERERERERETk/7MZuAl8BJxeFBl8AG4Am+oMel7hUtbBimxqMQh8VtCUBf3JZ6SgSSTogoYOSoOeo0bFgH/dTwCaDPmdwXvgWt2T4d/GgFeB0J8D20jPVuBZoF1vgPG2i5oEVgNF3QOGSMcgcDfQnjVgf1fF9YDvgeJmScfVQDt+AMe6LvBCZNw+jX2nIm2YxojQquQbcAS7DgNfA/XfwpBh4EGg2BVgAnv2AO8CdT8CNmLMduBFoOiXwA7SqncUo/b69WVZ8Q+N9JDiHXg/UOeqX1WZlsKYN5/wnFJpFj/XYW3TkdrOkJgrBtelvYzW/WaftCYjBxeLiT3JVto7eN3S3kGuezN/2AW8DTTyiT8qa8oI8Dhw/2IdvZtMHPQb5GWNvQMMNHDf4pq3A/f9AhwiM8eBn4FGX2rgnjOB+xW1nCBTMy02PPaPLWrJ1kBLb+XYULXQ0FBlykhkciomzp19XH/cr2a6mnxNGWtoubUFeGpgOWnKvsgDRNWjMGsPSKb0Io/Elytca9b6UVTXzgcC+tejsJOGN7FMmetj2zKFbVkzhoHlyFFYmZXA3y37a0uFo6UyqRydmTJRY9AWD4NNcTUFLREKuiVOPVpBZ8WpRyvorDj1aAWdFaceraCz4tSjFXRWnHq0gs6KU49W0Flx6tEKOitOPVpBZ8WpR9sKegMwpcPZ+oMeAg4AZ/1XMWK/hiMRoU+DhoJV0BVVCVNB98EpaPtBr/lvwF5sqdakuQqvdWDJf8PqqJGfqEiGU7DtB72uHtucRT/GTvmHEhERERERERERERGa8wvWLMKpAmTWXgAAAABJRU5ErkJggg==" />
-                                </defs>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#filter">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                    d="M18.796 4H5.204a1 1 0 0 0-.753 1.659l5.302 6.058a1 1 0 0 1 .247.659v4.874a.5.5 0 0 0 .2.4l3 2.25a.5.5 0 0 0 .8-.4v-7.124a1 1 0 0 1 .247-.659l5.302-6.059c.566-.646.106-1.658-.753-1.658Z" />
                             </svg>
+
                             Filtrar
                         </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="filter" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Filtros</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Bolsistas de Produtividade do CNPq
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                         Formação Acadêmica/Titulação
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                         Atuação profissional
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Idioma
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Atividade Profissional (Instituição)
+                                                    </label>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Outros Bolsistas do CNPq
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                         Nível do Curso de Pós-graduação onde é Docente
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                         Atividade de Orientação
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Áreas ou Setores da Produção em C&T
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Presença no Diretório de Grupos de pesquisa
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-success">Confirmar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Preferências -->
-                        <button class="btn btn-secondary">
-                            <svg width="25" height="25" viewBox="0 0 30 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect width="30" height="30" fill="url(#pattern0_170_66)" />
-                                <defs>
-                                    <pattern id="pattern0_170_66" patternContentUnits="objectBoundingBox" width="1"
-                                        height="1">
-                                        <use xlink:href="#image0_170_66" transform="scale(0.0111111)" />
-                                    </pattern>
-                                    <image id="image0_170_66" width="90" height="90"
-                                        xlink:href="data:image/png;base64,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" />
-                                </defs>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                            data-bs-target="#preferences">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-settings">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                </path>
                             </svg>
                             Preferências
                         </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="preferences" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Preferências</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label title-1">Tempo de atualização
+                                                    dos
+                                                    dados:</label>
+                                                <input type="text" class="form-control" id="inputEmail4">
+                                                <span class="input-information">Somente Currículos atualizados nos
+                                                    últimos meses</span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label title-1">Número de
+                                                    resultados:</label>
+                                                <input type="text" class="form-control" id="inputEmail4">
+                                                <span class="input-information">Mostrar por página</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5">
+                                            <div class="col-md-4">
+                                                <h6>Informações Pessoais:</h6>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Endereço
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Formação Acadêmica/Titulação
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Atuação profissional
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Áreas de atuação
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Idiomas
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Prêmios e títulos
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h6>Informações sobre produções:</h6>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Técnicas
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Softwares
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Produtos
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Processos
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Trabalhos técnicos
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Outras produções técnicas
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h6>Informações sobre produções bibliográficas</h6>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Artigos publicados
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Livros e capítulos
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Trabalhos em eventos
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Texto em jornal ou revista
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Outras produções bibliográficas
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row mt-3">
+                                            <div class="col-md-4">
+                                                <h6>Informações sobre demais produções/trabalhos</h6>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Produção artística/cultural
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Orientações concluídas
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Orientações em andamento
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Demais Trabalhos
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Outras produções bibliográficas
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h6>Outras Informações</h6>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Dados complementares
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Outras informações relevantes
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h6>Período da produção</h6>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault2" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        Todo o período
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        A partir do ano:
+                                                        <input type="email" class="form-control" id="inputEmail4">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-success">Confirmar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <hr class="mt-5">
