@@ -22,10 +22,9 @@ h1, h5{
 
 }
 
-
 .form-container {
     border: .5px solid var(--clr-grey);
-    padding: 3em 5em;
+    padding: 5em 5em;
     margin-bottom: 100px;
     border-radius: 20px;
     margin-top: 2em;
@@ -38,15 +37,15 @@ h1, h5{
 .check-filter{
     margin-left: 2em;
 }
+
 .btn-check{
     background-color: #7BD473;
     width: 110px;
 }
+
 .btn-check{
     background-color: #61aa5a;
 }
-
-
 
 .lupa{
     width: 25px;
@@ -76,11 +75,9 @@ h1, h5{
     text-decoration: underline; 
 }
 
-
 .form-busca{
     margin-top: 1.5em;
 }
-
 
 .icons-container {
     display: flex;
@@ -116,4 +113,8 @@ h1, h5{
 
 .avance{
     float: right;
+}
+
+.form-select {
+    cursor: pointer;
 }
