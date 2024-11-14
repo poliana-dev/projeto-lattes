@@ -30,7 +30,7 @@
                 </a>
 
                 <div class="text-center flex-grow-1">
-                    <p id="titulo-cadi" class="m-0">DIRETORIO DE INSTITUIÇÕES</p>
+                    <p id="titulo-cadi" class="m-0">DIRETORIO DE INSTITUIÇÕES - INSTITUIÇÃO NÃO ENCONTRADA</p>
                 </div>
         </nav>
     </section>
@@ -41,7 +41,6 @@
                 <div class="nav-links">
                     <a class="nav-link" aria-current="page" href="../index.html">Plataforma Lattes</a>
                     <a class="nav-link" aria-current="page" href="home-cadi.html">Diretório de Instituições</a>
-                    <a class="nav-link" aria-current="page" href="home-cadi.html">Cadastro de Instituições</a>
                 </div>
 
             </div>
@@ -49,7 +48,7 @@
     </section>
 
     <section class="form-container container">
-        <form action="." class="form-busca needs-validation" novalidate>
+        <form action="instituicao-encontrada.html">
             <div class="row">
                 <div class="col-md-12">
                     <h1>CADASTRO DE INFORMAÇÕES INSTITUCIONAIS</h1>
@@ -71,8 +70,8 @@
             <div class="row mt-4">
                 <div class="col-md-8">
                     <input class="form-control me-2" type="search" placeholder="Digite sua busca" aria-label="Buscar" required>
-                    <div class="invalid-feedback">
-                        Please provide a valid city.
+                    <div class="alert alert-danger mt-2" role="alert">
+                        Dados insuficientes ou instituição não encontrada
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -93,94 +92,18 @@
 
         <div class="row">
             <div class="col-md-6">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                <h5>Dicas de busca:</h5>
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>
-                                        Não utilize termos como “universidade”, “escola”, “departamento de
-                                        administração”, “instituto de física” (esse tipo de busca pode demorar e o
-                                        retorno, quase sempre, traz um grande número de repostas);
-
-                                    </li>
-                                    <li>
-                                        Para buscar subunidades de uma instituição, digite o nome ou parte do nome da
-                                        subunidade e a sigla da instituição à qual a subunidade se vincula. Ex:
-                                        “departamento química usp”, instituto física ufrj;
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                <h5>Perguntas frequentes:</h5>
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>(clique aqui para saber como incluir subunidades, como cadastrar Titular, etc)
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                    <h5>Cadastre uma nova instituição ou subunidade de acordo com as seguintes opções:</h5>
+                    <a href="cadastro-1-inst.html" class="btn btn-success">Cadastrar instituição</a>
                 </div>
             </div>
 
             <div class="col-md-6">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                                <h5>Importante:</h5>
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>A busca no DI permite recuperar informações sobre as instituições cadastradas no
-                                        CNPq e suas subunidades. A pesquisa pode ser feita pelo “Nome e/ou sigla”
-                                        (Fantasia ou Razão Social) ou pelo CNPJ;
-                                    </li>
-                                    <li>A lista de resultados contém ícones de Visualizar, de Hierarquia
-                                        institucional (visíveis c/o cursor posicionado sobre o nome da instituição) e
-                                        de Cadastrar uma nova instituição(localizado no final da lista);
-                                    </li>
-                                    <li>A inclusão de uma nova instituição (apenas nível macro) é feita pelo
-                                        link Cadastrar uma nova instituição;
-                                    </li>
-                                    <li>Não cadastre uma subunidade institucional (ex: Instituto de Física da
-                                        Universidade São Paulo) pelo link  Cadastrar uma nova instituição. A inclusão de
-                                        subunidades é feita pelo link Hierarquia institucional da instituição macro
-                                        correspondente;
-                                    </li>
-                                    <li>A inclusão de subunidades de uma instituição e a edição de dados cadastrais só
-                                        podem ser feitas por um Titular ou Representante cadastrado, mediante CPF e
-                                        senha;
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                    <h5>Cadastrar uma nova subunidade de instituição existente no DI</h5>
+                    <p>Esta operação é realizada a partir da arvore hierarquica da instituição. Para tal, consulte a
+                        instituição a qual a subunidade se vincula, selecione o botão  (Hierarquia Institucional) e
+                        realize o cadastro.</p>
                 </div>
             </div>
         </div>
