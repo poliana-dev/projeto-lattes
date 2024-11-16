@@ -109,6 +109,12 @@ footer{
     margin-top: 2em;
 }
 
+.menu{
+    /* padding-left: 11em; */
+    text-align: center;
+}
+
+
 .accordion-body{
     text-align: justify;
 }
