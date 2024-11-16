@@ -113,6 +113,7 @@ h1, h5{
 
 .avance{
     float: right;
+    margin-left: 5px;
 }
 
 .form-select {
