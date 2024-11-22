@@ -91,6 +91,16 @@ footer{
     transition: .1s;
 }
 
+@media screen and (max-width: 600px) {
+    .icons-container {
+      flex-wrap: wrap;
+    }
+
+    .icon {
+      flex-basis: 200px;
+    }
+}
+
 .form-container {
     border: .5px solid var(--clr-grey);
     padding: 3em 4em;
