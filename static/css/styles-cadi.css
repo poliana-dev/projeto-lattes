@@ -16,10 +16,9 @@ h1, h5{
     background-color: var(--marrom);
 }
 
-#titulo-cadi{
+.titulo-cadi {
     color: white;
-    padding-right: 15em;
-
+    /* padding-right: 15em; */
 }
 
 .form-container {
@@ -118,4 +117,53 @@ h1, h5{
 
 .form-select {
     cursor: pointer;
+}
+
+.navbar-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+@media screen and (max-width: 900px) {
+    .icons-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 781px) {
+    .titulo-cadi {
+        position: absolute;
+        left: 50%; 
+        transform: translate(-50%, -10px);
+        /* transform: translateY(-10px); */;
+    }
+}
+
+@media (max-width: 780px) {
+    .navbar-header-container {
+        flex-direction: column; /* Reorganiza em uma coluna */
+    }
+
+    .titulo-cadi {
+        position: static; /* Remove o comportamento absoluto */
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .icons-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 }
